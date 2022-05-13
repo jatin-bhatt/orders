@@ -14,7 +14,7 @@ Ordering API is built with following Domain Driven Design. We try to keep the co
 - Set data provider in `appsettings.json` file and modify the default connection string accordingly
 	```javascript
 	"ConnectionStrings": {
-		"Default": "Server=DESKTOP-MPINKGQ\\SQLEXPRESS;Database=Ordering;Trusted_Connection=True;ConnectRetryCount=0"
+		"Default": "Server=#{DB_SERVER_NAME}\\SQLEXPRESS;Database=Ordering;Trusted_Connection=True;ConnectRetryCount=0"
 	}	
 	```
 - Build
@@ -26,4 +26,4 @@ Ordering API is built with following Domain Driven Design. We try to keep the co
 - run 'Update-Database'
 
 ## Usage
-Run using IIS (hit ctrl + F5). It will open swagger interface where endpoint can be seen.
+Run using IIS or IISExpress (hit ctrl + F5). It will open swagger interface where endpoint can be seen.
